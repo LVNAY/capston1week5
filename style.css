@@ -1,0 +1,75 @@
+body {
+  display: flex;
+  height: 90vh;
+  width: 90vw;
+
+  justify-content: center;
+  align-items: center;
+  /* border: 2px solid black; */
+}
+
+.container {
+  width: 50%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: repeat(14, 1fr);
+  border: 2px solid black;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  font-family: "Nanum Gothic", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  border: 1px solid #ddd;
+}
+
+.row:first-child div {
+  grid-column: span 2;
+  text-align: center;
+}
+
+.row:nth-child(2) {
+  display: flex;
+  justify-content: center;
+}
+
+.row:nth-child(2) img {
+  width: 250px;
+  height: 250px;
+}
+
+.name {
+  display: flex;
+  align-items: center;
+}
+
+.value {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.row .name {
+  display: flex;
+  justify-content: center;
+  background-color: #0a5ca8;
+  color: white;
+}
+
+#nation img {
+  width: 30px;
+  height: 30px;
+}
+
+#type img {
+  width: 30px;
+  height: 30px;
+}
+
+#founder img {
+  width: 30px;
+  height: 30px;
+}
